@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s "${pwd}" ~/_ls_
+ln -s /bin/ls __ls__
