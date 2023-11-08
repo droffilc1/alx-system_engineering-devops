@@ -72,4 +72,19 @@ Complete the 9 next tasks, getting to 27 total.
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `command_line_for_the_win`
 -   File: `2-next_9_tasks.jpg,2-next_9_tasks.png`
+# How To Use SFTP to Securely Transfer Files with a Remote Server
 
+## How to Connect with SFTP
+
+Establish an SFTP session by issuing the following command:
+```bash
+sftp username@your_server_ip_or_remote_hostname
+```
+You will connect the the remote system and your prompt will change to an SFTP prompt.
+
+## Transferring Local Files to the Remote System
+
+Transferring files to the remote system works with a put command:
+```bash
+put /path/local_file /path/remote_file
+```
