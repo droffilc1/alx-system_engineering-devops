@@ -80,7 +80,7 @@ Establish an SFTP session by issuing the following command:
 ```bash
 sftp username@your_server_ip_or_remote_hostname
 ```
-You will connect the the remote system and your prompt will change to an SFTP prompt.
+Once you entered your password you will connect the the remote system and your prompt will change to an SFTP prompt.
 
 ## Transferring Local Files to the Remote System
 
