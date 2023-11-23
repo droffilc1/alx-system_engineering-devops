@@ -2,13 +2,12 @@
 # This script is displaying "Best School" 10 times
 # but for the 9th iteration, displays Best School and then Hi on a new line
 school="Best School"
-greeting="Hi"
 count=1
 while [[ $count -lt 10 ]]
 do
     if [[ $count -eq 9 ]]
     then
-        echo "${greeting}"
+        echo "Hi"
     fi
     ((count++))
     echo "${school}"
