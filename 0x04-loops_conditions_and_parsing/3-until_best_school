@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+school="Best School"
+counter=1
+until [[ $counter -gt 10 ]]
+do
+	echo "${school}"
+	((counter++))
+done
