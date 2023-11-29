@@ -17,3 +17,5 @@
 - [0x04](./0x04-loops_conditions_and_parsing) : Loops, conditions and parsing
 - [0x05](./0x05-processes_and_signals) : Processes and signals
 - [0x06](./0x06-regular_expressions) : Regular expression
+- [0x07](./0x07-networking_basics) : Networking basics #0
+- [0x08](./0x08-networking_basics_2) : Networking basics #1
