@@ -19,3 +19,4 @@
 - [0x06](./0x06-regular_expressions) : Regular expression
 - [0x07](./0x07-networking_basics) : Networking basics #0
 - [0x08](./0x08-networking_basics_2) : Networking basics #1
+- [0x09](./0x09-web_infrastructure_design) : Web infrastructure design
