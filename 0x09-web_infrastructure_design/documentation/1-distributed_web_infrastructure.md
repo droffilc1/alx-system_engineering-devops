@@ -27,6 +27,6 @@ The primary node handles all operations (CRUD), while the replica node is read-o
 They are in DNS as there may be DNS spoofing attacks.
 - **Security issues (no firewall, no HTTPS):**
     - Firewall - Absence of a firewall means less security based on preconfigured rules in the hardware or software, no analyzing data packets that request entry to the network.
-    - HTTPS - The data exchange is not secure as we are using HTTP protocol switching to HTTPS ensures encryption to secure data exchange between the clinet and the web server.
+    - HTTPS - The data exchange is not secure as we are using HTTP protocol switching to HTTPS ensures encryption to secure data exchange between the client and the web server.
 - **No monitoring:**
 Sotfware monitoring will watch computer metrics, record them, and emit an alert if something is unusual or that could make the computer not work properly happens.
