@@ -3,7 +3,7 @@
 
 # Task 2
 
-## Exaplanations
+## Explanations
 - **For every additional element, why you are adding it:**
     - **3 firewalls:**
     This ensures that only authorized users and devices can establish connections, reducing the risk of unauthorized access and potential data breaches.
