@@ -24,7 +24,7 @@ The server uses HTTP protocol to communicate.
 ## Issues
 
 - **Single Point of Failure (SPOF):**
-The infrastrure design system has a flaw since it has no redundancy that can help prevent any SPOFs.Any failure causes the whole system to stop working.
+The infrastrure design system has a flaw since it has no redundancy and fault tolerance that can help prevent any SPOFs.Any failure causes the whole system to stop working.
 - **Downtime when maintenance needed (like deploying new code web server needs to be restarted):**
 In this infrastrure design system downtime will occur because we only have one server and one database, that is used to make the deployment and maintenance hence no way users will access the website during deployment or maintainance.
 - **Cannot scale if too much incoming traffic:**
