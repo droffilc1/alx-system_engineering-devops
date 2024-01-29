@@ -22,5 +22,8 @@
 - [0x09](./0x09-web_infrastructure_design) : Web infrastructure design
 - [0x0A](./0x0A-configuration_management) : 0x0A. Configuration management
 - [0x0B](./0x0B-ssh) : 0x0B. SSH
-- [0x0C](./0x0C-web_server) : 0x0C. Web server 
+- [0x0C](./0x0C-web_server) : 0x0C. Web server
+- [0x0D](./0x0D-web_stack_debugging_0) : 0x0D. Web stack debugging #0
+- [0x0E](./0x0E-web_stack_debugging_1) : 0x0E. Web stack debugging #1
+- [0x0F](./0x0F-load_balancer) : 0x0F. Load balancer
 - [Attack is the best defense.](./attack_is_the_best_defense)
