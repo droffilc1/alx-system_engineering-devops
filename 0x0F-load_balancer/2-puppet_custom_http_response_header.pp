@@ -10,7 +10,7 @@ package { 'nginx':
 
 file_line { 'append a line in nginx config file':
     path  => '/etc/nginx/nginx.conf',
-    line  => ;\tadd_header X-Served-By ${hostname};",
+    line  => "\tadd_header X-Served-By ${hostname};",
     after => 'http {',
 }
 
