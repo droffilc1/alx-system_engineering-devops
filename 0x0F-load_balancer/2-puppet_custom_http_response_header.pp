@@ -1,23 +1,16 @@
 # Adds a custom HTTP header
-exec { 'apt-update':
-    command => '/usr/bin/apt update',
-    path    => ['/usr/bin', '/usr/sbin'],
+exec {'update':
+  command => '/usr/bin/apt-get update',
 }
-
-package { 'nginx':
-    ensure => 'installed',
-    name   => 'nginx',
+-> package { 'nginx':
+  ensure => installed,
 }
-
-file_line { 'nginx-custom-header':
-    path    => '/etc/nginx/nginx.conf',
-    line    => "\tadd_header X-Served-By ${hostname};",
-    after   => 'http {',
-    require => Package['nginx'],
+-> file_line { 'header_served_by':
+  path  => '/etc/nginx/sites-available/default',
+  match => '^server {',
+  line  => "server {\n\tadd_header X-Served-By \"${hostname}\";",
+  multiple => false,
 }
-
-service { 'nginx':
-  ensure    => 'running',
-  enable    => true,
-  subscribe => File_line['nginx-custom-header'],
+-> exec {'run':
+  command => '/usr/sbin/service nginx restart',
 }
