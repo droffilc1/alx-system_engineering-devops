@@ -10,8 +10,11 @@ frontend http
 
 backend web_backend
     balance roundrobin
-    server 472385-web-01 100.26.49.195 check
-    server 472385-web-02 54.152.70.222 check
+    server 472385-web-01 100.26.49.195:80 check
+    server 472385-web-02 54.152.70.222:80 check
 EOF
+
+# enable haproxy to be started by init script
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
 sudo service haproxy restart
