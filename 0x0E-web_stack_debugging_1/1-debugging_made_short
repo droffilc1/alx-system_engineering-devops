@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # service (init) must say that nginx is not running ← for real
-sudo servic nginx start
+sudo service nginx start
 sudo service nginx stop
