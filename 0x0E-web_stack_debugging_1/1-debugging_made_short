@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # service (init) must say that nginx is not running ← for real
 sudo service nginx start > /dev/null 2>&1
-curl -s 0:80
+wait
 sudo service nginx stop > /dev/null 2>&1
