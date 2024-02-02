@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Function to get information for a specific subdomain
 get_subdomain_info() {
     domain="$1"
