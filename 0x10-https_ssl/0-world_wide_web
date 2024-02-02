@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# Function to get information for a specific subdomain
+get_subdomain_info() {
+    domain="$1"
+    subdomain="$2"
+
+    # Resolve DNS records for the subdomain
+    records=$(dig +short "$subdomain.$domain" | awk '{print $1}')
+
+    # Determine the record type
+    if [[ -n "$records" ]]; then
+        # Check if the record type is "A"
+        if echo "$records" | grep -q ':';then
+            record_type="AAAA"
+        else
+            record_type="A"
+        fi
+
+        dest=$(echo "$records" | awk 'NR==1')
+
+        # Print information
+        echo "The subdomain $subdomain is a $record_type record and points to $dest"
+    else
+        echo "No records found for subdomain $subdomain"
+    fi
+}
+
+# Main script
+if [[ $# -eq 1 ]]; then
+    domain="$1"
+    subdomains=("www" "lb-01" "web-01" "web-02")
+    for subdomain in "${subdomains[@]}"; do
+        get_subdomain_info "$domain" "$subdomain"
+    done
+elif [[ $# -eq 2 ]]; then
+    domain="$1"
+    subdomain="$2"
+    get_subdomain_info "$domain" "$subdomain"
+else
+    echo "Usage: $0 <domain> [<subdomain>]"
+    exit 1
+fi
