@@ -34,14 +34,14 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend http_front
+frontend www
+	mode http 
 	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/domain.pem
-	mode http
-	redirect scheme https if !{ ssl_fc }  
-	default_backend http_back  
+	bind *:443 ssl crt /etc/haproxy/certs/www.cliffordmapesa.tech.pem
+	http-request redirect scheme https unless { ssl_fc }  
+	default_backend webservers  
 
-backend http_back
+backend webservers
 	balance roundrobin
-	server 472385-web-01 100.26.49.195 check
-	server 472385-web-02 54.152.70.222 chec
+	server 472385-web-01 100.26.49.195:80 check
+	server 472385-web-02 54.152.70.222:80 check
