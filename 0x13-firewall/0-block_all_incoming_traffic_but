@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # installs firewall; blocks all incoming except ports 22, 80, 443
 sudo apt-get install ufw
-sudo sed -i "s/IPV6=no/IPV6=yes/" /etc/default/ufw
+
+# setting default policies 
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
