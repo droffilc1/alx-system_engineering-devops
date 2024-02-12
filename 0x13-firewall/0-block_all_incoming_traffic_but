@@ -12,6 +12,3 @@ sudo ufw allow https
 
 # activate the firewall
 sudo ufw enable
-
-# see rulles that are set
-sudo ufw status verbose
