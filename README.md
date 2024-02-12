@@ -22,6 +22,7 @@
 - [0x09](./0x09-web_infrastructure_design) : Web infrastructure design
 - [0x10](./0x10-https_ssl) : 0x10. HTTPS SSL
 - [0x11](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) : What happens when you type google.com in your browser and press Enter
+- [0x13](./0x13-firewall) : Firewall
 - [0x0A](./0x0A-configuration_management) : 0x0A. Configuration management
 - [0x0B](./0x0B-ssh) : 0x0B. SSH
 - [0x0C](./0x0C-web_server) : 0x0C. Web server
