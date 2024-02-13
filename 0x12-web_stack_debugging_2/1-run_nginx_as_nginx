@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Fix container so that nginx is running as the nginx user
+
+# change file permissions of config file
+chmod 644 /etc/nginx/nginx.conf
+chown nginx:nginx /etc/nginx/nginx.conf
+
+# update config file with user 'nginx'
+sudo sed -i 's/#user www-data;/user nginx;/g"'/etc/nginx/nginx.conf
+
+# update file to listen to port 8080
+sudo sed -i 's/80/8080/' /etc/nginx/sites-available/default
+
+# stop apache2 if it is running on port 8080
+pkill 'apache2'
+
+# restart nginx
+sudo -u nginx service nginx restart
