@@ -30,4 +30,4 @@ if __name__ == '__main__':
     }
 
     with open('{}.json'.format(user_id), 'w') as file:
-        json.dump(data, file, indent=4)
+        json.dump(data, file)
