@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Export data in the CSV format"""
+"""Export data in the json format"""
 
 from sys import argv
-import csv
+import json
 import requests
 
 
@@ -17,8 +17,17 @@ if __name__ == '__main__':
         .format(user_id)
     response = requests.get(url)
     tasks = response.json()
-    with open('{}.csv'.format(user_id), 'w', newline='') as file:
-        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
-        for task in tasks:
-            writer.writerow([user_id, username, task.get('completed'),
-                            task.get('title')])
+
+    data = {
+        user_id:[
+            {
+                "task": task.get('title'),
+                "completed":task.get('completed'),
+                "username": username
+            }
+            for task in tasks
+        ]
+    }
+
+    with open('{}.json'.format(user_id), 'w') as file:
+        json.dump(data, file, indent=4)
