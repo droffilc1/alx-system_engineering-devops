@@ -19,10 +19,10 @@ if __name__ == '__main__':
     tasks = response.json()
 
     data = {
-        user_id:[
+        user_id: [
             {
                 "task": task.get('title'),
-                "completed":task.get('completed'),
+                "completed": task.get('completed'),
                 "username": username
             }
             for task in tasks
