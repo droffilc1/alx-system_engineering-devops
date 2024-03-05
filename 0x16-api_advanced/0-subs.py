@@ -9,7 +9,7 @@ def number_of_subscribers(subreddit):
         for a given subreddit
     If an invalid subreddit is given, the function should return 0
     """
-    # API endpoint for geeting subreddit information
+    # API endpoint for getting subreddit information
     url = f'https://www.reddit.com/r/{subreddit}/about.json'
 
     # Set a custom User-Agent to avoid too many requests errors
