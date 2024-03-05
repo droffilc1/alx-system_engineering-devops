@@ -26,6 +26,7 @@
 - [0x13](./0x13-firewall) : Firewall
 - [0x14](./0x14-mysql) : MySQL
 - [0x15](./0x15-api) : API
+- [0x16](./0x16-api_advanced) : API advanced
 - [0x0A](./0x0A-configuration_management) : Configuration management
 - [0x0B](./0x0B-ssh) : SSH
 - [0x0C](./0x0C-web_server) : Web server
