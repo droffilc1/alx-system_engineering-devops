@@ -27,6 +27,7 @@
 - [0x0D](./0x0D-web_stack_debugging_0) : Web stack debugging #0
 - [0x0E](./0x0E-web_stack_debugging_1) : Web stack debugging #1
 - [0x0F](./0x0F-load_balancer) : Load balancer
+- [0x1A](./0x1A-application_server) : Application server
 - [0x11](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) : What happens when you type google.com in your browser and press Enter
 - [0x12](./0x12-web_stack_debugging_2) : Web stack debugging #2
 - [0x13](./0x13-firewall) : Firewall
