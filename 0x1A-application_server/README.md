@@ -1,8 +1,5 @@
 # Project: 0x1A. Application server
 
-
-![https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/9/c7d1ed0a2e10d1b4e9b3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%252F20240311%252Fus-east-1%252Fs3%252Faws4_request&X-Amz-Date=20240311T061353Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4dde2ae5995e43e927bd1512fb6d2ee57180cb7c82f26fffc5066c50ce846458](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/9/c7d1ed0a2e10d1b4e9b3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%252F20240311%252Fus-east-1%252Fs3%252Faws4_request&X-Amz-Date=20240311T061353Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4dde2ae5995e43e927bd1512fb6d2ee57180cb7c82f26fffc5066c50ce846458)
-
 ## Resources
 
 #### Read or watch:
