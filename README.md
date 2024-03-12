@@ -26,8 +26,7 @@
 - [0x0C](./0x0C-web_server) : Web server
 - [0x0D](./0x0D-web_stack_debugging_0) : Web stack debugging #0
 - [0x0E](./0x0E-web_stack_debugging_1) : Web stack debugging #1
-- [0x0F](./0x0F-load_balancer) : Load balancer
-- [0x1A](./0x1A-application_server) : Application server
+- [0x0F](./0x0F-load_balancer) : Load balancer 
 - [0x11](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) : What happens when you type google.com in your browser and press Enter
 - [0x12](./0x12-web_stack_debugging_2) : Web stack debugging #2
 - [0x13](./0x13-firewall) : Firewall
@@ -37,4 +36,6 @@
 - [0x17](./0x17-web_stack_debugging_3) : Web stack debugging #3
 - [0x18](./0x18-webstack_monitoring) : Webstack monitoring
 - [0x19](./0x19-postmortem) : Postmortem
+- [0x1A](./0x1A-application_server) : Application server
+- [0x1B](./0x1B-web_stack_debugging_4) : Web stack debugging #4 
 - [Attack is the best defense.](./attack_is_the_best_defense)
